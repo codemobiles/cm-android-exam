@@ -18,7 +18,7 @@
 
 3.4 เพิ่ม Validation
 
-- ตรวจสอบ Format Email โดยใช้ Regex (ตัวอย่าง: ^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$)
+- ตรวจสอบ Format Email โดยใช้ Regex  
 - ตรวจสอบความรหัสผ่าน ความยาว 8 ตัวขึ้นไป
   
 3.5 เมื่อกดปุ่มเข้าสู่ระบบ ตรวจสอบ Email = aa@bb.cc และ Password = 12345678 
@@ -33,7 +33,7 @@
 
 4.3 แปลงข้อมูล JSON ข้อ 4.1 เป็น data class (ชื่อ Product) 
 
-4.4 แสดงข้อมูลที่ fetch โดยใช้ Recyclerview มีข้อมูลดังนี้
+4.4 แสดงข้อมูลที่ fetch โดยใช้ Recyclerview เป็น Card สวยงาม มีข้อมูลดังนี้
 
   <img width="172" alt="Screenshot 2567-05-24 at 14 41 20" src="https://github.com/oldster189/cm-android-exam/assets/13812385/7c8946c9-e2f3-473c-84c4-9b309021f231">
 
