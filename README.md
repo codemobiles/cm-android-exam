@@ -18,29 +18,34 @@
 
 3.4 เพิ่ม Validation
 
-- ตรวจสอบ Format Email โดยใช้ Regex
+- ตรวจสอบ Format Email โดยใช้ Regex (ตัวอย่าง: ^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$)
 - ตรวจสอบความรหัสผ่าน ความยาว 8 ตัวขึ้นไป
   
 3.5 เมื่อกดปุ่มเข้าสู่ระบบ ตรวจสอบ Email = aa@bb.cc และ Password = 12345678 
 
         - ถ้าถูกต้อง Navigate ไปหน้า Home Activity
          
-        - ถ้าผิดให้ Alert ข้อความ "Email or password incorrect"
+        - ถ้าผิดให้ Toast หรือ AlertDialog ข้อความ "Email or password incorrect"
 
 <b>4. หน้า Home Activity มีเงื่อนไขตามนี้</b>
+4.1 เน้นการใช้เครื่องมือและไลบรารีที่ทันสมัย
+4.2 fetch ข้อมูล GET: https://dummyjson.com/products 
 
-4.1 fetch ข้อมูล GET: https://dummyjson.com/products 
+4.3 แปลงข้อมูล JSON ข้อ 4.1 เป็น data class (ชื่อ Product) 
 
-4.2 แปลงข้อมูล JSON ข้อ 4.1 เป็น data class (ชื่อ Product) 
-
-4.3 แสดงข้อมูลที่ fetch ได้เป็น Card Recyclerview มีข้อมูลดังนี้
+4.4 แสดงข้อมูลที่ fetch โดยใช้ Recyclerview มีข้อมูลดังนี้
+  ---------------------
+  |    | title    |    |
+  | รูป | price    | ดู  |
+  |    | stock    |    |
+  ---------------------
   - Thumbnail
   - Title
   - Price
   - Stock
   - ปุ่ม Detail
 
-4.4 เมือกดปุ่ม Detail ให้ส่ง id product ผ่าน params ไปหน้า Detail Activity
+4.5 เมือกดปุ่ม Detail ให้ส่ง id product ผ่าน params ไปหน้า Detail Activity
  
 <b>5. เพิ่ม input ช่องค้นหาข้อมูลสินค้า ค้นหาชื่อสินค้าแบบ Debound Time(1 วินาที) และ contain string ในหน้า Home Activity</b>
 
