@@ -6,7 +6,7 @@
  - Home Activity
  - Detail Activity
 
-2.1 ค่าเริ่มต้น Redirect มาหน้า Login Activity
+2.1 ค่าเริ่มต้น Navigate มาหน้า Login Activity
 
 <b>3. หน้า Login Page มี UI ดังนี้</b>
 
@@ -29,11 +29,8 @@
 
 <b>4. หน้า Home Activity มีเงื่อนไขตามนี้</b>
 4.1 เน้นการใช้เครื่องมือและไลบรารีที่ทันสมัย
-4.2 fetch ข้อมูล GET: https://dummyjson.com/products 
-
-4.3 แปลงข้อมูล JSON ข้อ 4.1 เป็น data class (ชื่อ Product) 
-
-4.4 แสดงข้อมูลที่ fetch โดยใช้ Recyclerview เป็น Card สวยงาม มีข้อมูลดังนี้
+4.2 fetch ข้อมูล GET: https://dummyjson.com/products  
+4.3 แสดงข้อมูลที่ fetch โดยใช้ Recyclerview เป็น Card สวยงาม มีข้อมูลดังนี้
 
   <img width="172" alt="Screenshot 2567-05-24 at 14 41 20" src="https://github.com/oldster189/cm-android-exam/assets/13812385/7c8946c9-e2f3-473c-84c4-9b309021f231">
 
@@ -43,7 +40,7 @@
   - Stock
   - ปุ่ม Detail
 
-4.5 เมือกดปุ่ม Detail ให้ส่ง id product ผ่าน params ไปหน้า Detail Activity
+4.4 เมือกดปุ่ม Detail ให้ส่ง id product ผ่าน params ไปหน้า Detail Activity
  
 <b>5. เพิ่ม input ช่องค้นหาข้อมูลสินค้า ค้นหาชื่อสินค้าแบบ Debound Time(1 วินาที) และ contain string ในหน้า Home Activity</b>
 
@@ -51,7 +48,8 @@
   - ทั้งหมด (แสดงสินค้าทั้งหมด)
   - ราคามากว่า 1000 (กรองสินค้าที่มีราคา 1000 ขึ้นไป และมี %ส่วนลด มากกว่า 0) 
   - แสดงราคารวมต่อชิ้น (เพิ่ม Column ขึ้นมาอีก 1 Column สำหรับแสดง ราคารวมต่อชิ้น) [เพิ่ม key totalPrice เข้าไปใน data class Product เพื่อแสดงใน column]
-  - เรียงเรตติ้ง (เรียง rating สินค้าแบบ desc และ price แบบ asc)  
+  - เรียงเรตติ้ง (เรียง rating สินค้าแบบ desc และ price แบบ asc)
+  - แสดงราคารวมทั้งหมด (คำนวนราคาสินค้าทั้งหมด ของ array สินค้า) [เพิ่ม Label ราคารวม ไว้เป็น Header Recyclerview]
  
 <b>7. หน้า Detail Activity</b>
 
@@ -65,7 +63,7 @@
   
 <b>8. ปริ้นข้อความใน Life Cycle ต่างๆ ของ Activity ในหน้า Detail Page </b>
 
-<b>9. เพิ่ม Interceptor http</b>
+<b>9. เพิ่ม Interceptor http </b>
 
 9.1 Add header key CMReq = “request” ตอน Request http
 
