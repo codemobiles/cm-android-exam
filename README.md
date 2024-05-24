@@ -34,11 +34,9 @@
 4.3 แปลงข้อมูล JSON ข้อ 4.1 เป็น data class (ชื่อ Product) 
 
 4.4 แสดงข้อมูลที่ fetch โดยใช้ Recyclerview มีข้อมูลดังนี้
-  ---------------------\n
-  |    | title    |    | \n
-  | รูป | price    | ดู  | \n
-  |    | stock    |    | \n
-  --------------------- \n
+
+  <img width="172" alt="Screenshot 2567-05-24 at 14 41 20" src="https://github.com/oldster189/cm-android-exam/assets/13812385/7c8946c9-e2f3-473c-84c4-9b309021f231">
+
   - Thumbnail
   - Title
   - Price
