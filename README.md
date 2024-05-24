@@ -33,7 +33,7 @@
 
 4.2 แปลงข้อมูล JSON ข้อ 4.1 เป็น data class (ชื่อ Product) 
 
-4.3 แสดงข้อมูลที่ fetch ได้เป็น ตาราง Recyclerview มี Column ดังนี้
+4.3 แสดงข้อมูลที่ fetch ได้เป็น Card Recyclerview มี Column ดังนี้
   - Thumbnail
   - Title
   - Price
